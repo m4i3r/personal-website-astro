@@ -14,7 +14,7 @@ tags:
 
 My studies of Business Information Systems at the Technical University of Applied Sciences Rosenheim include a practial training semester. To gather first-hand international experience I decided to complete this internship semester abroad. A destination of choice was found quickly: Ireland🇮🇪!
 
-![EIN BILD](/images/busy_road_small.jpeg "Hey its a title")
+![A picture showing an traditional irish bar with a modern tech office building behind it ](/images/dublin.jpeg "Tradition meets Tech")
 
 Ariving in Dublin was exciting, as I only knew small cities before (at max. 75k residents). It was raining, of course, but I was just baffled by a unbeliveably vibrant and beautiful city that is so much different to large german cities. As today is the 20th of September and I arrived here on September 1st, I haven't been here for long. I will update this thread as time goes on, so please stay tuned! :)
 
