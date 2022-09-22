@@ -1,75 +1,94 @@
 ---
-import MainHead from '../components/MainHead.astro';
-import Footer from '../components/Footer.astro';
-import Nav from '../components/Nav.astro';
+	import MainHead from '../components/MainHead.astro';
+	import Footer from '../components/Footer.astro';
+	import Nav from '../components/Nav.astro';
 ---
 
 <html lang="en">
-	<head>
-		<MainHead title="About | Manuel Maier" description="The About section of Manuel Maier, have a quick read through of who I am and what I do" />
-		<style>
-			.heroImg {
-				max-height: 24rem;
-				object-fit: cover;
-				overflow: hidden;
-			}
 
-			.heroImg img {
-				width: 100%;
-			}
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CK5TTDEPQK"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-			.bio {
-				font-size: var(--f-u1);
-				line-height: 2;
-				margin-top: 4em;
-			}
+		gtag('config', 'G-CK5TTDEPQK');
+	</script>
+	<MainHead title="About | Manuel Maier"
+		description="The About section of Manuel Maier, have a quick read through of who I am and what I do" />
+	<style>
+		.heroImg {
+			max-height: 24rem;
+			object-fit: cover;
+			overflow: hidden;
+		}
 
-			.wrapper.bio {
-				max-width: 50em;
-			}
-		</style>
-	</head>
-	<body>
-		<Nav />
-		<div class="wrapper">
-			<h1>About Manuel</h1>
-			<div class="heroImg">
-				<img
-					src="/images/profilefin.jpg"
-				/>
-			</div>
-			<div class="bio wrapper">
-				<p>
-				Hi! I'm Manuel, 23 years old and from Bavaria, Germany. 
-				Currently I'm abroad as a exchange student living in Dublin, Ireland 🇮🇪.
-				I'm a finaly-year student of Business Information Systems (often aka Management Information Systems)
-				at the Technical University of Applied Sciences Rosenheim.
-				</p>
-				<p>
-				Besides my studies I work part-times as a Working Student in Software Development where my focus lies in developing web applications.
-				Through this role I'm exposed to JavaScript, Java, GraphQL, Springboot, TypeScript, NodeJS, Docker and many more.
-				</p>
-				<p>
-					As a great interest of mine lies in Cloud Infrastructure and Networking I'm passionate about my HomeLab. HomeLabbing basically means building up servers and selfhosting cloud storage/services
-					instead of relying on commercial cloud services like Google and Co. Not only am I regaining ownership of my data, you learn a TON about how stuff works including Docker/Kubernetes, IP protocols, RESTful-APIs,
-					Networking, PC hardware and more.
-				</p>
-				<img src="/images/homelab.jpeg" title="My Homelab with TrueNas, Proxmox and a Synology DS as Backup."/>
-				<p>
-				I plan on writing up my HomeLab properly in a seperate post that you can read on this site when it's done! 
-				</p>
-				<p>
-				Last but not least is my passion for photography. What started as a basic interest is now a full-grown hobby of mine. I really enjoy taking and editing photos as it can be relaxing to escape in a different perspective of things.
-				If you're interested in seeing some photos, please follow <a href="/portfolio">along</a>!
-				</p>
-				<a href="/portfolio">
-					<img src="/images/berries.jpeg"/>
-				</a>
-				<p>
-				If you have any questions or want to connect, please do so on my <a href="https://me.maiermanuel.website" target="_blank" rel="noopener noreferrer">Little Link</a>
-				</p>
-			</div>
+		.heroImg img {
+			width: 100%;
+		}
+
+		.bio {
+			font-size: var(--f-u1);
+			line-height: 2;
+			margin-top: 4em;
+		}
+
+		.wrapper.bio {
+			max-width: 50em;
+		}
+	</style>
+</head>
+
+<body>
+	<Nav />
+	<div class="wrapper">
+		<h1>About Manuel</h1>
+		<div class="heroImg">
+			<img src="/images/profilefin.jpg" />
 		</div>
-		<Footer />
-	</body>
+		<div class="bio wrapper">
+			<p>
+				Hi! I'm Manuel, 23 years old and from Bavaria, Germany.
+				Currently I'm abroad as a exchange student living in Dublin, Ireland 🇮🇪.
+				I'm a final-year student of Business Information Systems (often aka Management Information Systems)
+				at the Technical University of Applied Sciences Rosenheim.
+			</p>
+			<p>
+				Besides my studies I work part-times as a Working Student in Software Development where my focus lies in
+				developing web applications.
+				Through this role I'm exposed to JavaScript, Java, GraphQL, Springboot, TypeScript, NodeJS, Docker and
+				many more.
+			</p>
+			<p>
+				As a great interest of mine lies in Cloud Infrastructure and Networking I'm passionate about my HomeLab.
+				HomeLabbing basically means building up servers and selfhosting cloud storage/services
+				instead of relying on commercial cloud services like Google and Co. Not only am I regaining ownership of
+				my data, you learn a TON about how stuff works including Docker/Kubernetes, IP protocols, RESTful-APIs,
+				Networking, PC hardware and more.
+			</p>
+			<img src="/images/homelab.jpeg" title="My Homelab with TrueNas, Proxmox and a Synology DS as Backup." />
+			<p>
+				I plan on writing up my HomeLab properly in a seperate post that you can read on this site when it's
+				done!
+			</p>
+			<p>
+				Last but not least is my passion for photography. What started as a basic interest is now a full-grown
+				hobby of mine. I really enjoy taking and editing photos as it can be relaxing to escape in a different
+				perspective of things.
+				If you're interested in seeing some photos, please follow <a href="/portfolio">along</a>!
+			</p>
+			<a href="/portfolio">
+				<img src="/images/berries.jpeg" />
+			</a>
+			<p>
+				If you have any questions or want to connect, please do so on my <a
+					href="https://me.maiermanuel.website" target="_blank" rel="noopener noreferrer">Little Link</a>
+			</p>
+		</div>
+	</div>
+	<Footer />
+</body>
+
 </html>
