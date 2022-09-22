@@ -4,7 +4,7 @@
 	</a>
 	<a class="link" href="/projects/"> All Posts</a>
 	<a class="link hideme" href="/portfolio/"> Photography</a>
-	<a class="link" href="/about/"> About</a>
+	<a class="link hideme2" href="/about/"> About</a>
 	<div class="socials">
 		<a class="social" href="mailto:mail@maiermanuel.de">
 		<svg class="socialIcon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -140,6 +140,12 @@
 
 	@media (max-width: 500px) {
 		.hideme {
+			display: none;
+		}
+	}
+
+	@media (max-width: 320px) {
+		.hideme2 {
 			display: none;
 		}
 	}

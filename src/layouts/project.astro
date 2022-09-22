@@ -78,12 +78,24 @@ const { content } = Astro.props;
 				text-align: center;
 				margin-top: 3rem;
 			}
+
+			@media (max-width: 530px) {
+				.mobilefix {
+					font-size: 2.6rem;
+				}
+			}
+
+			@media (max-width: 530px) {
+				.mobilefix2 {
+					font-size: 2.0rem;
+				}
+			}
 		</style>
 	</head>
 	<body>
 		<Nav />
 		<header style={`background-image:url(${content.img})`} class="hero">
-			<h1 class="title">{content.title}</h1>
+			<h1 class="title mobilefix mobilefix2">{content.title}</h1>
 		</header>
 		<div class="leadIn">
 			<div class="wrapper">
