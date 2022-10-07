@@ -2,6 +2,7 @@
 	import MainHead from '../components/MainHead.astro';
 	import Footer from '../components/Footer.astro';
 	import Nav from '../components/Nav.astro';
+	var age = new Date().getFullYear() - new Date('1999-01-13').getFullYear()
 ---
 
 <html lang="en">
@@ -50,7 +51,7 @@
 		</div>
 		<div class="bio wrapper">
 			<p>
-				Hi! I'm Manuel, 23 years old and from Bavaria, Germany.
+				Hi! I'm Manuel, {age} years old and from Bavaria, Germany.
 				Currently I'm abroad as a exchange student living in Dublin, Ireland 🇮🇪.
 				I'm a final-year student of Business Information Systems (often aka Management Information Systems)
 				at the Technical University of Applied Sciences Rosenheim.

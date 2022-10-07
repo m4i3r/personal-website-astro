@@ -2,7 +2,7 @@
 layout: ../../layouts/project.astro
 title: Dublin
 client: Self
-publishDate: 2022-09-01 00:00:00
+publishDate: 2022-09-20 00:00:00
 img: /images/busy_road_small.jpeg
 description: |
   I went to Dublin, Ireland for my practical semester! Have a read of my experience! :)

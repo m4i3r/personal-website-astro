@@ -8,6 +8,8 @@
 	// Data Fetching: List all Markdown posts in the repo.
 	const projects = (await Astro.glob('./project/**/*.md')).filter(({ frontmatter }) => !!frontmatter.publishDate);
 	const featuredProject = projects[projects.length - 1];
+	var age = new Date().getFullYear() - new Date('1999-01-13').getFullYear()
+
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -25,7 +27,7 @@
 
 	gtag('config', 'G-CK5TTDEPQK');
 </script>
-	<MainHead title="Manuel Maier: Personal Site"
+	<MainHead title="Hi, it&#8217s Manuel Maier"
 		description="Manuel Maier: Developer, Photographer, and Tech Enthusiast..." />
 	<style>
 		.wrapper {
@@ -243,7 +245,7 @@
 				<h3 class="sectionTitle">About me</h3>
 				<p class="bio">
 					<span>Hi!</span>
-					I'm Manuel, a 23 y/o student in Business Information Systems at the Technical University of Applied
+					I'm Manuel, a {age} years old student in Business Information Systems at the Technical University of Applied
 					Sciences Rosenheim, Germany. I'm a huge Tech Enthusiast following all new trends and break-throughs
 					in technology and related areas. I love to to take photos with my Sony A6100, so basically any photo
 					you see here is taken by me. :)
