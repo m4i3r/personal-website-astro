@@ -60,6 +60,11 @@ body {
 	font-family: 'Inter', 'system-ui', sans-serif;
 }
 
+figcaption {
+	text-align: center;
+	font-size: var(--f-d1);
+}
+
 * {
 	box-sizing: content-box;
 }

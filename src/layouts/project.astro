@@ -94,9 +94,15 @@ const pubdate = new Date(content.publishDate).toLocaleDateString('en-US',options
 				}
 			}
 
-			@media (max-width: 530px) {
+			@media (max-width: 460px) {
 				.mobilefix2 {
 					font-size: 2.0rem;
+				}
+			}
+
+			@media (max-width: 440px) {
+				.tagfix {
+					font-size: 0.8rem;
 				}
 			}
 		</style>
@@ -108,7 +114,7 @@ const pubdate = new Date(content.publishDate).toLocaleDateString('en-US',options
 		</header>
 		<div class="leadIn">
 			<div class="wrapper">
-				{content.tags.map((t) => <span class="tag">{t}</span>)}
+				{content.tags.map((t) => <span class="tag tagfix">{t}</span>)}
 				<h3 class="tagline">{content.description}</h3>
 				<br>
 				<p class="publishdate">Published on: {pubdate}</p>

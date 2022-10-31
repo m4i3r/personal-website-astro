@@ -4,14 +4,14 @@ const { frontmatter, url } = Astro.props.project;
 
 <div class="card">
 	<div class="titleCard" style={`background-image:url(${frontmatter.img})`}>
-		<h1 class="title">{frontmatter.title}</h1>
+		<h1 class="title mobilefix mobilefix2">{frontmatter.title}</h1>
 	</div>
 	<div class="descCard">
 		<p class="desc">{frontmatter.description}</p>
 		<div class="tags">
 			Tagged:
 			{frontmatter.tags.map((t) => (
-				<div class="tag" data-tag={t}>
+				<div class="tag tagfix" data-tag={t}>
 					{t}
 				</div>
 			))}
@@ -41,7 +41,7 @@ const { frontmatter, url } = Astro.props.project;
 		margin: 0;
 		color: white;
 		flex-direction: column;
-		font-size: var(--f-u4);
+		font-size: var(--f-u10);
 		font-weight: 900;
 		text-transform: uppercase;
 		letter-spacing: 0.0625em;
@@ -132,4 +132,16 @@ const { frontmatter, url } = Astro.props.project;
 	.tag:nth-of-type(4n) {
 		color: var(--c-pink);
 	}
+	@media (max-width: 530px) {
+		.mobilefix {
+			font-size: 2.6rem;
+		}
+	}
+
+	@media (max-width: 440px) {
+		.mobilefix2 {
+			font-size: 1.4rem;
+		}
+	}
+
 </style>
